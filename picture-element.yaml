@@ -116,18 +116,28 @@ elements:
           top: 46.96%
           left: 30.4%
           color: black
-  - entity: sensor.nibe_68392_43064
-    prefix: 'dT calc: '
-    style:
-      left: 52%
-      top: 97.5%
-      color: black
-    type: state-label
-  - entity: sensor.nibe_68392_43065
-    prefix: 'dT is: '
-    style:
-      left: 68%
-      top: 97.5%
-      color: black
-    type: state-label
+  - type: conditional
+    conditions:
+      - entity: sensor.nibe_heating_priority
+        state: heating
+    elements:
+      - type: state-label
+        entity: sensor.nibe_68392_43064
+        prefix: 'dT calc: '
+        style:
+          left: 52%
+          top: 97.5%
+          color: black
+  - type: conditional
+    conditions:
+      - entity: sensor.nibe_heating_priority
+        state: heating
+    elements:
+      - type: state-label
+        entity: sensor.nibe_68392_43065
+        prefix: 'dT is: '
+        style:
+          left: 68%
+          top: 97.5%
+          color: black
 image: http://homeassistant:8123/local/F750-hass-drawing.png
