@@ -4,7 +4,7 @@ Requires: https://github.com/elupus/hass_nibe integration
 
 Instruction:
 - Setup nibe integration
-- Setup template "static" sensor in order to support conditional icon for heating priority (or skip this conditional entity).
+- Setup template "binary" sensor in order to support conditional icon for heating priority (or skip this conditional entity).
   - In your config file add contents of: template.yaml
 - Upload drawing to hass (./www/f750-hass-drawing.png)
 - Create a Picture elements card, paste yaml
