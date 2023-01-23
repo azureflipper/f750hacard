@@ -8,6 +8,7 @@ Instruction:
   - In your config file add contents of: template.yaml
 - Upload drawing to hass (./www/f750-hass-drawing.png)
 - Create a Picture elements card, paste yaml
+- Change the first 5 numbers in every entity to your Nibe systemID
 
 Preview of picture elements card in hass:
 
