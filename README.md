@@ -8,3 +8,7 @@ Instruction:
   - In your config file add contents of: template.yaml
 - Upload drawing to hass (./www/f750-hass-drawing.png)
 - Create a Picture elements card, paste yaml
+
+Preview of picture elements card in hass:
+
+![preview](https://user-images.githubusercontent.com/38658285/214054975-1f273aaf-3628-4892-a620-f80fcbb6f639.png)
