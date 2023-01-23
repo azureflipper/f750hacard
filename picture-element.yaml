@@ -1,0 +1,133 @@
+type: picture-elements
+elements:
+  - entity: sensor.nibe_68392_40025
+    style:
+      left: 68.5%
+      top: 4%
+      color: orange
+    type: state-label
+  - entity: sensor.nibe_68392_40026
+    style:
+      left: 49%
+      top: 4%
+      color: lightblue
+    type: state-label
+  - entity: sensor.nibe_68392_41026
+    style:
+      left: 49%
+      top: 15%
+      color: black
+    type: state-label
+  - entity: sensor.nibe_68392_43124
+    style:
+      left: 68.5%
+      top: 15%
+      color: black
+    type: state-label
+  - entity: sensor.nibe_68392_43123
+    prefix: ''
+    style:
+      left: 15%
+      top: 26.1%
+      color: black
+    type: state-label
+  - entity: sensor.nibe_68392_43136
+    prefix: ''
+    style:
+      left: 15%
+      top: 31.5%
+      color: black
+    type: state-label
+  - entity: sensor.nibe_68392_40013
+    style:
+      left: 58.5%
+      top: 45%
+      color: orange
+    type: state-label
+  - entity: water_heater.nibe_hot_water
+    style:
+      left: 58.5%
+      top: 56%
+      color: black
+    type: state-label
+  - entity: sensor.nibe_68392_40014
+    style:
+      left: 58.5%
+      top: 74%
+      color: lightblue
+    type: state-label
+  - entity: sensor.nibe_68392_43181
+    style:
+      left: '-1.5%'
+      top: 56.8%
+      color: black
+      font-size: 0.8vw
+      transform: rotate(-90deg)
+    type: state-label
+  - entity: sensor.nibe_68392_43084
+    style:
+      left: 13.8%
+      top: 56.6%
+      color: black
+      font-size: 0.85vw
+      transform: rotate(-90deg)
+    type: state-label
+  - entity: sensor.nibe_68392_40047
+    style:
+      left: 32%
+      top: 93%
+      color: black
+    type: state-label
+  - entity: sensor.nibe_68392_40048
+    style:
+      left: 86.5%
+      top: 93%
+      color: black
+    type: state-label
+  - entity: sensor.nibe_68392_43005
+    style:
+      left: 34.3%
+      top: 28.7%
+      color: black
+      font-size: 0.60vw
+    type: state-label
+    suffix: null
+  - type: conditional
+    conditions:
+      - entity: sensor.nibe_heating_priority
+        state: water
+    elements:
+      - type: icon
+        icon: mdi:arrow-right-drop-circle-outline
+        icon-size: null
+        style:
+          top: 46.96%
+          left: 30.4%
+          color: darkorange
+  - type: conditional
+    conditions:
+      - entity: sensor.nibe_heating_priority
+        state: heating
+    elements:
+      - type: icon
+        icon: mdi:arrow-down-drop-circle-outline
+        icon-size: null
+        style:
+          top: 46.96%
+          left: 30.4%
+          color: black
+  - entity: sensor.nibe_68392_43064
+    prefix: 'dT calc: '
+    style:
+      left: 52%
+      top: 97.5%
+      color: black
+    type: state-label
+  - entity: sensor.nibe_68392_43065
+    prefix: 'dT is: '
+    style:
+      left: 68%
+      top: 97.5%
+      color: black
+    type: state-label
+image: http://homeassistant:8123/local/F750-hass-drawing-akerman.png
