@@ -2,8 +2,8 @@ template:
   - sensor:
       - name: "Nibe heating priority"
         state: >
-          {% if is_state('sensor.nibe_68392_43064', 'unavailable') %}
-            water
-          {% else %}
+          {% if is_state('water_heater.nibe_hot_water', 'off') %}
             heating
+          {% else %}
+            water
           {% endif %}
